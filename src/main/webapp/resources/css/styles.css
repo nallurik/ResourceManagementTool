@@ -1,0 +1,66 @@
+/* body {
+    margin-bottom: 80px;
+}
+
+.page-header {
+    margin-top: 0;
+}
+
+.panel-body {
+    padding-top: 0;
+}
+
+.featuredImg {
+    margin-bottom: 15px;
+}
+
+#contact-message {
+    resize: vertical;
+} */
+@import "http://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css";
+
+@import
+	"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+	;
+
+@import "https://daneden.github.io/animate.css/animate.min.css";
+/*-------------------------------*/
+/*           VARIABLES           */
+/*-------------------------------*/
+//
+BACKGROUND COLOR
+ @bg-color: #583e7e ; // TEXT COLOR
+ @text-color: #fff ; // SIDEBAR LINK COLOR VARIABLES
+ @side-color-1: #1a1a1a ;
+ @side-color-2: darken (@side-color-3, 5%); @side-color-3: darken
+	(@side-color-4, 5%); @side-color-4: @bg-color ;
+ @side-color-5: lighten (@side-color-4, 5%); @side-color-6: lighten
+	(@side-color-5, 5%); @side-color-7: lighten (@side-color-6, 5%); @side-color-8: lighten
+	(@side-color-7, 5%); @side-color-9: lighten (@side-color-8, 5%); //
+	HAMBURGER COLOR
+ @hamburger-color-closed: fadeout (@text-color, 30); @hamburger-color-open: 
+	@text-color ; // WIDTH VARIABLES
+ @width1: 220px ;
+ @width2: 100px ;
+ @full-width: 100%; // HEIGHT VARIABLES
+ @full-height: 100%; body {
+	position: relative;
+	overflow-x: hidden;
+}
+
+body, html {
+	height: @full-height;
+	background-color: @bg-color;
+}
+
+.nav { .open >a { background-color:transparent; &:hover {
+	background-color:transparent;
+	
+}
+
+&
+:focus {
+	background-color: transparent;
+}
+}
+}

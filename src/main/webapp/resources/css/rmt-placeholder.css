@@ -1,0 +1,5 @@
+::-webkit-input-placeholder {color:#999;}
+::-moz-placeholder {color:#999;} /*FF 19+ */
+:-moz-placeholder {color:#999;} /*FF 18- */
+::-ms-input-placeholder {color:#999;} 
+.placeholder {color:#999;} /* for the polyfill */
