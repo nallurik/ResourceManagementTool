@@ -14,3 +14,22 @@
 		<p>This is another text.</p>
 	</div>
 </div>
+
+
+<style>
+.container .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+.jumbotron h1, .jumbotron .h1 {
+    font-size: 30px;
+}
+
+.jumbotron {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+</style>

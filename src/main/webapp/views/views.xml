@@ -19,7 +19,7 @@
 		</put-list-attribute>
 		<put-list-attribute name="scriptfiles" >
 			<add-attribute value="resources/js/jquery-3.2.1.min.js"/>
-			<!-- <add-attribute value="resources/js/jquery-ui.js"/> -->
+			<add-attribute value="resources/js/jquery-ui.js"/>
 			<add-attribute value="resources/bootstrap/js/bootstrap.js"/>
 		</put-list-attribute>
 	</definition>

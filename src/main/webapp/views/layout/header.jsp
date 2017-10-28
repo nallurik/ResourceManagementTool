@@ -12,36 +12,42 @@
 			<div class="rmt-nav-menu-wrapper">
 				<div class="rmt-nav-menu-scroller">
 					<ul class="rmt-nav-menu navbar-inverse nav nav-pills nav-stacked">
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home1</a></li>
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home2</a></li>
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home3</a></li>
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home4</a></li>
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home5</a></li>
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home6</a></li>
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home7</a></li>
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home8</a></li>
-						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home9</a></li>
+						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home</a></li>
+						<li><a class="rmt-nav-menu-icon" href="#"><i class="fa fa-home fa-lg fa-fw"></i>Employee Information</a>
+							<ul class="rmt-nav-submenu fa-ul">
+								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Personal Information</a></li>							
+								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Dependents Information</a></li>
+								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Immigration Information</a></li>
+								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Technology Information</a></li>
+							</ul>
+						</li>
+						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lx"></i>Employee Accounts</a></li>
+						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lx"></i>Employee TimeSheets</a></li>
+						<li><a class="rmt-nav-menu-icon" href="#"><i class="fa fa-home fa-lx"></i>Vendor Details</a>
+							<ul class="rmt-nav-submenu fa-ul">
+								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Prime Vendors</a></li>							
+								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Sub Vendors</a></li>
+							</ul>
+						</li>
+						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lx"></i>Immigration</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<%-- <div class="navbar-collapse collapse">
+		<div class="navbar-collapse collapse">
 			<p class="navbar-text navbar-left">
 				<a class="navbar-link" href="${pageContext.request.contextPath}/welcome">Resource Management Tool</a></p>
 			<ul class="nav navbar-nav navbar-right">
 				<li><i class="fa fa-user fa-inverse fa-lg pull-right"></i></li>
-				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Kranthi<b class="caret"></b>
 				</a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Google+</a></li>
-						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Sign Out</a></li>
 					</ul></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#contact" data-toggle="modal">Contact</a></li>
 			</ul>
-		</div> --%>
+		</div>
 	</nav>
 </div>
 <div class='notifications top-right'></div>
@@ -104,9 +110,9 @@ i {
 			$(element).toggleClass('hidden');
 			$(element).prev().append('<span class="rmt-nav-menu-badge">'+count+'</span>');
 			
-			$(element).prev().on('click', function() {
+			/* $(element).prev().on('click', function() {
 				$(element).toggleClass('hidden');
-			});
+			}); */
 		});
 		
 		$(document).on('click', '.rmt-nav-menu li', function() {

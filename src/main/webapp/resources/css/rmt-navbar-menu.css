@@ -1,8 +1,8 @@
-*, *:after, *::before {
-	-webkit-box-sizing: birder-box;
-	-moz-box-sizing: birder-box;
-	-ms-box-sizing: birder-box;
-	box-sizing: birder-box;
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @font-face {
@@ -50,7 +50,7 @@
 	padding-right: 10px;
 }
 
-.rmt-nav-menu>li {
+.rmt-nav-menu > li {
 	display: list-item;
 	border-right: 1px solid #c6d0da;
 }
@@ -80,26 +80,24 @@
 	bottom: 0;
 	left: 0;
 	overflow: hidden;
-	width: 50px;
-	-webkit-transition: translateX(-50px);
-	-moz-transition: translateX(-50px);
-	-ms-transition: translateX(-50px);
-	transition: translateX(-50px);
-	-webkit-transition: translateX(-50px);
-	-moz-transition: translateX(-50px);
-	-ms-transition: translateX(-50px);
-	transition: translateX(-50px);
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
-	-ms-transition: -moz-transform 0.3s, opacity 0.3s;
-	transition: transform 0.3s, opacity 0.3s;
+	/* width: 50px; */
+	height : 500px;
+	/* -webkit-transform: translateX(-50px);
+	-moz-transform: translateX(-50px);
+	-ms-transform: translateX(-50px);
+	transform: translateX(-50px);
+	
+	-webkit-transition: -webkit-transform 0.3s, width 0.3s;
+	-moz-transition: -moz-transform 0.3s, width 0.3s;
+	-ms-transition: -moz-transform 0.3s, width 0.3s;
+	transition: transform 0.3s, width 0.3s; */
 }
 
 .rmt-nav-menu-scroller {
 	position: absolute;
 	overflow-y: scroll;
 	width: 317px;
-	height: 100%
+	height: 100%;
 }
 
 .rmt-nav-menu-icon::before {
@@ -113,6 +111,7 @@
 	line-height: 1;
 	font-size: 18px;
 	speak: none;
+	-webkit-font-smoothing: antialiased;
 	line-height: 30px;
 	vertical-align: -7%;
 }
@@ -157,15 +156,16 @@
 	content: "\e009"
 }
 
-.rmt-nav-menu-wrapper.open-all, .rmt-nav-menu-wrapper.open-part {
-	-webkit-transition: translateX(0px);
-	-moz-transition: translateX(0px);
-	-ms-transition: translateX(0px);
-	transition: translateX(0px);
+.rmt-nav-menu-wrapper.open-all,
+.rmt-nav-menu-wrapper.open-part {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
 }
 
 .rmt-nav-menu-wrapper.open-all {
-	width: 284px;
+	width: 299px;
 }
 
 .rmt-nav-menu-wrapper.open-all .rmt-nav-submenu li {
