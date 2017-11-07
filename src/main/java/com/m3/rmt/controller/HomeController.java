@@ -17,4 +17,9 @@ public class HomeController {
 	public ModelAndView handleGetSignIn() {
         return new ModelAndView("welcome");
     }
+	
+	@RequestMapping(value="/userprofile", method = RequestMethod.GET)
+	public ModelAndView userProfile() {
+        return new ModelAndView("userprofile");
+    }
 }
