@@ -61,5 +61,14 @@
 		<put-list-attribute name="scriptfiles" inherit="true">
 		</put-list-attribute>
 	</definition>
+	
+	<definition name="userprofile" extends="baseLayout">
+		<put-attribute name="header" value="/views/layout/signin-header.jsp"/>
+		<put-attribute name="body" value="/views/body/userprofile.jsp"/>
+		<put-list-attribute name="cssfiles" inherit="true">
+		</put-list-attribute>
+		<put-list-attribute name="scriptfiles" inherit="true">
+		</put-list-attribute>
+	</definition>
 
 </tiles-definitions>

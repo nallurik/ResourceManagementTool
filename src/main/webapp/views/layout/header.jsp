@@ -15,7 +15,7 @@
 						<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Home</a></li>
 						<li><a class="rmt-nav-menu-icon" href="#"><i class="fa fa-home fa-lg fa-fw"></i>Employee Information</a>
 							<ul class="rmt-nav-submenu fa-ul">
-								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Personal Information</a></li>							
+								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/userprofile"><i class="fa fa-home fa-lg fa-fw"></i>Personal Information</a></li>							
 								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Dependents Information</a></li>
 								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Immigration Information</a></li>
 								<li><a class="rmt-nav-menu-icon" href="${pageContext.request.contextPath}/welcome"><i class="fa fa-home fa-lg fa-fw"></i>Technology Information</a></li>
