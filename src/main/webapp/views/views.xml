@@ -13,6 +13,7 @@
 			<add-attribute value="resources/bootstrap/css/bootstrap.min.css"/>
 			<add-attribute value="resources/bootstrap/css/bootstrap-theme.min.css"/>
 			<add-attribute value="resources/bootstrap/css/bootstrap-toggle.min.css"/>
+			<add-attribute value="resources/bootstrap/css/bootstrap-multiselect.css"/>
 			<add-attribute value="resources/css/navbar-fixed-top.css"/>
 			<add-attribute value="resources/css/rmt-navbar-menu.css"/>
 			<add-attribute value="resources/css/rmt-placeholder.css"/>
@@ -23,6 +24,7 @@
 			<add-attribute value="resources/js/jquery-ui.js"/>
 			<add-attribute value="resources/bootstrap/js/bootstrap.js"/>
 			<add-attribute value="resources/bootstrap/js/bootstrap-toggle.min.js"/>
+			<add-attribute value="resources/bootstrap/js/bootstrap-multiselect.js"/>
 		</put-list-attribute>
 	</definition>
 	
@@ -67,8 +69,10 @@
 	<definition name="userprofile" extends="baseLayout">
 		<put-attribute name="body" value="/views/body/employeeInfo.jsp"/>
 		<put-list-attribute name="cssfiles" inherit="true">
+			<add-attribute value="resources/bootstrap/css/bootstrap-datepicker.css"/>
 		</put-list-attribute>
 		<put-list-attribute name="scriptfiles" inherit="true">
+			<add-attribute value="resources/bootstrap/js/bootstrap-datepicker.js"/>
 		</put-list-attribute>
 	</definition>
 </tiles-definitions>

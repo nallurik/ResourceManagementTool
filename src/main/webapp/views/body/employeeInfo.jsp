@@ -30,58 +30,16 @@
 					<jsp:include page="userprofile.jsp" flush="true"/>						
 				</div>
 				<div class="tab-pane fade" id="profile">
-					<h3 class="head text-center">
-						Create a Bootsnipp<sup>™</sup> Profile
-					</h3>
-					<p class="narrow text-center">Lorem ipsum dolor sit amet, his
-						ea mollis fabellas principes. Quo mazim facilis tincidunt ut,
-						utinam saperet facilisi an vim.</p>
-
-					<p class="text-center">
-						<a href="" class="btn btn-success btn-outline-rounded green">
-							create your profile <span style="margin-left: 10px;"
-							class="glyphicon glyphicon-send"></span>
-						</a>
-					</p>
-
+					<jsp:include page="dependentsInfo.jsp" flush="true"/>
 				</div>
 				<div class="tab-pane fade" id="messages">
-					<h3 class="head text-center">Bootsnipp goodies</h3>
-					<p class="narrow text-center">Lorem ipsum dolor sit amet, his
-						ea mollis fabellas principes. Quo mazim facilis tincidunt ut,
-						utinam saperet facilisi an vim.</p>
-
-					<p class="text-center">
-						<a href="" class="btn btn-success btn-outline-rounded green">
-							start using bootsnipp <span style="margin-left: 10px;"
-							class="glyphicon glyphicon-send"></span>
-						</a>
-					</p>
+					<jsp:include page="userprofile.jsp" flush="true"/>
 				</div>
 				<div class="tab-pane fade" id="settings">
-					<h3 class="head text-center">Drop comments!</h3>
-					<p class="narrow text-center">Lorem ipsum dolor sit amet, his
-						ea mollis fabellas principes. Quo mazim facilis tincidunt ut,
-						utinam saperet facilisi an vim.</p>
-
-					<p class="text-center">
-						<a href="" class="btn btn-success btn-outline-rounded green">
-							start using bootsnipp <span style="margin-left: 10px;"
-							class="glyphicon glyphicon-send"></span>
-						</a>
-					</p>
+					<jsp:include page="userprofile.jsp" flush="true"/>
 				</div>
 				<div class="tab-pane fade" id="doner">
-					<div class="text-center">
-						<i class="img-intro icon-checkmark-circle"></i>
-					</div>
-					<h3 class="head text-center">
-						thanks for staying tuned! <span style="color: #f48260;">♥</span>
-						Bootstrap
-					</h3>
-					<p class="narrow text-center">Lorem ipsum dolor sit amet, his
-						ea mollis fabellas principes. Quo mazim facilis tincidunt ut,
-						utinam saperet facilisi an vim.</p>
+					<jsp:include page="userprofile.jsp" flush="true"/>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -269,13 +227,9 @@ li.active span.round-tabs.five {
 	background: transparent;
 }
 
-.tab-content {
-	
-}
-
 .tab-pane {
 	position: relative;
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 .tab-content .head {

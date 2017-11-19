@@ -2,7 +2,7 @@
 <!-- Custom CSS -->
 <style>
 body {
-	padding-top: 70px;
+	padding-top: 50px;
 	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -26,6 +26,13 @@ body {
 }
 
 </style>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#languagesKnown').multiselect();
+        $('#technicalSkills').multiselect();
+    });
+</script>
 
 <body>
 	<div class="container">
@@ -67,14 +74,6 @@ body {
 							</div>
 						</div>
 						
-						<!-- File Button -->
-						<div class="form-group">
-							<label class="col-md-4 control-label" for="Upload photo">Upload photo</label>
-							<div class="col-md-4">
-								<input id="Upload photo" name="Upload photo" class="input-file" type="file">
-							</div>
-						</div>
-
 						<!-- Text input-->
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="Date Of Birth">Date Of Birth</label>
@@ -133,10 +132,10 @@ body {
 								<!-- <label class="radio-inline" for="radios-0"> <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Married </label> 
 								<label class="radio-inline" for="radios-1"> <input type="radio" name="radios" id="radios-1" value="2"> Unmarried </label> -->
 								<div class="dlk-radio btn-group">
-								   <label class="btn btn-success">
+								   <label class="btn btn-danger">
 								        <input name="choices[1]" class="form-control" type="radio" value="1"> <i class="fa fa-check glyphicon glyphicon-ok"></i>
 								   </label>
-								   <label class="btn btn-danger">
+								   <label class="btn btn-success">
 								       <input name="choices[1]" class="form-control" type="radio" value="2" defaultchecked="checked"> <i class="fa fa-times glyphicon glyphicon-remove"></i>
 							       </label>								  
 							    </div>
@@ -193,7 +192,14 @@ body {
 							<div class="col-md-4">
 								<div class="input-group">
 									<div class="input-group-addon"> <i class="fa fa-graduation-cap"></i> </div>
-									<input id="Skills" name="Skills" type="text" placeholder="Skills" class="form-control input-md">
+									<select id="technicalSkills" multiple="multiple">
+									    <option value="php">PHP</option>
+								        <option value="javascript">JavaScript</option>
+								        <option value="java">Java</option>
+								        <option value="sql">SQL</option>
+								        <option value="jquery">Jquery</option>
+								        <option value=".net">.Net</option>
+									</select>
 								</div>
 							</div>
 						</div>
@@ -238,29 +244,15 @@ body {
 						<!-- Multiple Checkboxes -->
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="Languages Known">Languages Known</label>
-							<div class="col-md-4"  style="width: 50%;">
-									<!-- <label for="Languages Known-0"> <input type="checkbox"  data-toggle="toggle" data-onstyle="success" data-offstyle="danger" id="Languages Known-1" value="1" data-on="Yes" data-off="No"> Telugu </label>
-									<label for="Languages Known-1"> <input type="checkbox"  data-toggle="toggle" data-onstyle="success" data-offstyle="danger" id="Languages Known-2" value="2" data-on="Yes" data-off="No"> Tamil </label>
-									<label for="Languages Known-2"> <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" id="Languages Known-3" value="3" data-on="Yes" data-off="No"> English </label>
-									<label for="Languages Known-3"> <input type="checkbox"  data-toggle="toggle" data-onstyle="success" data-offstyle="danger" id="Languages Known-4" value="4" data-on="Yes" data-off="No"> Hindi </label> -->
-									
-								<div class="dlk-radio btn-group">
-								   <label class="btn btn-success">
-								       <input name="choices[2][]" class="form-control" type="checkbox" value="2" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> Telugu
-							       </label>
-								   <label class="btn btn-info">
-								       <input name="choices[2][]" class="form-control" type="checkbox" value="3" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> Tamil
-							       </label>
-								   <label class="btn btn-warning">
-								       <input name="choices[2][]" class="form-control" type="checkbox" value="4" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> English
-							       </label>
-							       	   <label class="btn btn-danger">
-								       <input name="choices[1]" class="form-control" type="checkbox" value="0" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> Hindi
-							       </label>
-							    </div>
-
-								<div class="othertop">
-									<label for="Languages Known-4"> </label> <input name="LanguagesKnown" id="Languages Known-4" placeholder="Other Language">
+							<div class="col-md-4">
+								<div class="input-group">
+									<div class="input-group-addon"> <i class="fa fa-language"></i> </div>	
+								    <select id="languagesKnown" multiple="multiple">
+									    <option value="telugu">Telugu</option>
+									    <option value="tamil">Tamil</option>
+									    <option value="english">English</option>
+									    <option value="hindi">Hindi</option>
+									</select>
 								</div>
 							</div>
 						</div>
@@ -283,10 +275,6 @@ body {
 
 					</fieldset>
 				</form>
-			</div>
-			<div class="col-md-2 hidden-xs">
-				<img src="http://websamplenow.com/30/userprofile/images/avatar.jpg"
-					class="img-responsive img-thumbnail ">
 			</div>
 		</div>
 	</div>

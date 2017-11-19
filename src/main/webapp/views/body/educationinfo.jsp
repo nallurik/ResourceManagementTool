@@ -1,36 +1,8 @@
-
-<!-- Custom CSS -->
-<style>
-
-.dlk-radio input[type="radio"],
-.dlk-radio input[type="checkbox"] 
-{
-	margin-left:-99999px;
-	display:none;
-}
-.dlk-radio input[type="radio"] + .fa ,
-.dlk-radio input[type="checkbox"] + .fa {
-     opacity:0.15
-}
-.dlk-radio input[type="radio"]:checked + .fa,
-.dlk-radio input[type="checkbox"]:checked + .fa{
-    opacity:1
-}
-
-
-</style>
-
 <script type="text/javascript">
     $(document).ready(function() {
-    	$('#dateOfBirth,#statusExpirationDate').datepicker({
+    	$('#dateOfBirth').datepicker({
 			format: 'mm-dd-yyyy'
 		});
-    	
-    	$('.prev i').removeClass();
-		$('.prev i').addClass("fa fa-chevron-left");
-		
-		$('.next i').removeClass();
-		$('.next i').addClass("fa fa-chevron-right");
     });
 </script>
 
@@ -241,7 +213,7 @@
 							<div class="col-md-4">
 								<div class="input-group">
 									<div class="input-group-addon"> <i class="fa fa-calendar"></i> </div>
-									<input id="statusExpirationDate" name="SCurrent Immigration Status" type="text" placeholder="Status Expiry Date" class="form-control input-md">
+									<input id="statusExpiryDate" name="SCurrent Immigration Status" type="text" placeholder="Status Expiry Date" class="form-control input-md">
 								</div>
 							</div>
 						</div>
