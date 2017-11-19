@@ -9,6 +9,22 @@ body {
 .othertop {
 	margin-top: 10px;
 }
+
+.dlk-radio input[type="radio"],
+.dlk-radio input[type="checkbox"] 
+{
+	margin-left:-99999px;
+	display:none;
+}
+.dlk-radio input[type="radio"] + .fa ,
+.dlk-radio input[type="checkbox"] + .fa {
+     opacity:0.15
+}
+.dlk-radio input[type="radio"]:checked + .fa,
+.dlk-radio input[type="checkbox"]:checked + .fa{
+    opacity:1
+}
+
 </style>
 
 <body>
@@ -58,6 +74,39 @@ body {
 								<input id="Upload photo" name="Upload photo" class="input-file" type="file">
 							</div>
 						</div>
+						
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="Date Of Birth">Relationship</label>
+							<div class="col-md-4">
+								<div class="input-group">
+									<div class="input-group-addon"> <i class="fa fa-birthday-cake"></i> </div>
+									<input id="Date Of Birth" name="Date Of Birth" type="text" placeholder="Date Of Birth" class="form-control input-md">
+								</div>
+							</div>
+						</div>
+						
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="Date Of Birth">Country Of Birth</label>
+							<div class="col-md-4">
+								<div class="input-group">
+									<div class="input-group-addon"> <i class="fa fa-birthday-cake"></i> </div>
+									<input id="Date Of Birth" name="Date Of Birth" type="text" placeholder="Date Of Birth" class="form-control input-md">
+								</div>
+							</div>
+						</div>
+						
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="Date Of Birth">Country of Citizenship</label>
+							<div class="col-md-4">
+								<div class="input-group">
+									<div class="input-group-addon"> <i class="fa fa-birthday-cake"></i> </div>
+									<input id="Date Of Birth" name="Date Of Birth" type="text" placeholder="Date Of Birth" class="form-control input-md">
+								</div>
+							</div>
+						</div>
 
 						<!-- Text input-->
 						<div class="form-group">
@@ -73,7 +122,29 @@ body {
 
 						<!-- Text input-->
 						<div class="form-group">
-							<label class="col-md-4 control-label" for="Father">Father's name</label>
+							<label class="col-md-4 control-label" for="Father">SSN</label>
+							<div class="col-md-4">
+								<div class="input-group">
+									<div class="input-group-addon"> <i class="fa fa-male" style="font-size: 20px;"></i> </div>
+									<input id="Father" name="Father" type="text" placeholder="Father's name" class="form-control input-md">
+								</div>
+							</div>
+						</div>
+						
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="Father">A-Number</label>
+							<div class="col-md-4">
+								<div class="input-group">
+									<div class="input-group-addon"> <i class="fa fa-male" style="font-size: 20px;"></i> </div>
+									<input id="Father" name="Father" type="text" placeholder="Father's name" class="form-control input-md">
+								</div>
+							</div>
+						</div>
+						
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="Father">I-94 Number</label>
 							<div class="col-md-4">
 								<div class="input-group">
 									<div class="input-group-addon"> <i class="fa fa-male" style="font-size: 20px;"></i> </div>
@@ -97,8 +168,16 @@ body {
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="Gender">Gender</label>
 							<div class="col-md-4">
-								<label class="radio-inline" for="Gender-0"> <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked"> Male </label> 
-								<label class="radio-inline" for="Gender-1"> <input type="radio" name="Gender" id="Gender-1" value="2"> Female </label> 
+								<!-- <label class="radio-inline" for="Gender-0"> <input type="radio" name="Gender" id="Gender-0" value="1" checked="checked"> Male </label> 
+								<label class="radio-inline" for="Gender-1"> <input type="radio" name="Gender" id="Gender-1" value="2"> Female </label> --> 
+								<div class="dlk-radio btn-group">
+								   <label class="btn btn-success">
+								        <input name="choices[1]" class="form-control" type="radio" value="1"> <i class="fa fa-check glyphicon glyphicon-ok"></i> Male
+								   </label>
+								   <label class="btn btn-danger">
+								       <input name="choices[1]" class="form-control" type="radio" value="2" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> Female
+							       </label>								  
+							    </div>
 							</div>
 						</div>
 
@@ -106,8 +185,16 @@ body {
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="radios">Marital Status:</label>
 							<div class="col-md-4">
-								<label class="radio-inline" for="radios-0"> <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Married </label> 
-								<label class="radio-inline" for="radios-1"> <input type="radio" name="radios" id="radios-1" value="2"> Unmarried </label>
+								<!-- <label class="radio-inline" for="radios-0"> <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Married </label> 
+								<label class="radio-inline" for="radios-1"> <input type="radio" name="radios" id="radios-1" value="2"> Unmarried </label> -->
+								<div class="dlk-radio btn-group">
+								   <label class="btn btn-danger">
+								        <input name="choices[1]" class="form-control" type="radio" value="1"> <i class="fa fa-check glyphicon glyphicon-ok"></i>
+								   </label>
+								   <label class="btn btn-success">
+								       <input name="choices[1]" class="form-control" type="radio" value="2" defaultchecked="checked"> <i class="fa fa-times glyphicon glyphicon-remove"></i>
+							       </label>								  
+							    </div>
 							</div>
 						</div>
 
@@ -205,21 +292,27 @@ body {
 
 						<!-- Multiple Checkboxes -->
 						<div class="form-group">
-							<label class="col-md-4 control-label" for="Languages Known">Languages
-								Known</label>
-							<div class="col-md-4">
-								<div class="checkbox">
-									<label for="Languages Known-0"> <input type="checkbox" name="Languages Known" id="Languages Known-0" value="1"> Telugu </label>
-								</div>
-								<div class="checkbox">
-									<label for="Languages Known-1"> <input type="checkbox" name="Languages Known" id="Languages Known-1" value="2"> Tamil </label>
-								</div>
-								<div class="checkbox">
-									<label for="Languages Known-2"> <input type="checkbox" name="Languages Known" id="Languages Known-2" value="3"> English </label>
-								</div>
-								<div class="checkbox">
-									<label for="Languages Known-3"> <input type="checkbox" name="Languages Known" id="Languages Known-3" value="4"> Hindi </label>
-								</div>
+							<label class="col-md-4 control-label" for="Languages Known">Languages Known</label>
+							<div class="col-md-4"  style="width: 50%;">
+									<!-- <label for="Languages Known-0"> <input type="checkbox"  data-toggle="toggle" data-onstyle="success" data-offstyle="danger" id="Languages Known-1" value="1" data-on="Yes" data-off="No"> Telugu </label>
+									<label for="Languages Known-1"> <input type="checkbox"  data-toggle="toggle" data-onstyle="success" data-offstyle="danger" id="Languages Known-2" value="2" data-on="Yes" data-off="No"> Tamil </label>
+									<label for="Languages Known-2"> <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" id="Languages Known-3" value="3" data-on="Yes" data-off="No"> English </label>
+									<label for="Languages Known-3"> <input type="checkbox"  data-toggle="toggle" data-onstyle="success" data-offstyle="danger" id="Languages Known-4" value="4" data-on="Yes" data-off="No"> Hindi </label> -->
+									
+								<div class="dlk-radio btn-group">
+								   <label class="btn btn-success">
+								       <input name="choices[2][]" class="form-control" type="checkbox" value="2" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> Telugu
+							       </label>
+								   <label class="btn btn-info">
+								       <input name="choices[2][]" class="form-control" type="checkbox" value="3" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> Tamil
+							       </label>
+								   <label class="btn btn-warning">
+								       <input name="choices[2][]" class="form-control" type="checkbox" value="4" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> English
+							       </label>
+							       	   <label class="btn btn-danger">
+								       <input name="choices[1]" class="form-control" type="checkbox" value="0" defaultchecked="checked"> <i class="fa fa-check glyphicon glyphicon-ok"></i> Hindi
+							       </label>
+							    </div>
 
 								<div class="othertop">
 									<label for="Languages Known-4"> </label> <input name="LanguagesKnown" id="Languages Known-4" placeholder="Other Language">

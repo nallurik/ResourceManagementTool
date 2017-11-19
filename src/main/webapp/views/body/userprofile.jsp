@@ -133,10 +133,10 @@ body {
 								<!-- <label class="radio-inline" for="radios-0"> <input type="radio" name="radios" id="radios-0" value="1" checked="checked"> Married </label> 
 								<label class="radio-inline" for="radios-1"> <input type="radio" name="radios" id="radios-1" value="2"> Unmarried </label> -->
 								<div class="dlk-radio btn-group">
-								   <label class="btn btn-success">
+								   <label class="btn btn-danger">
 								        <input name="choices[1]" class="form-control" type="radio" value="1"> <i class="fa fa-check glyphicon glyphicon-ok"></i>
 								   </label>
-								   <label class="btn btn-danger">
+								   <label class="btn btn-success">
 								       <input name="choices[1]" class="form-control" type="radio" value="2" defaultchecked="checked"> <i class="fa fa-times glyphicon glyphicon-remove"></i>
 							       </label>								  
 							    </div>
