@@ -1,6 +1,14 @@
 
 <!-- Custom CSS -->
 <style>
+body {
+	padding-top: 50px;
+	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.othertop {
+	margin-top: 10px;
+}
 
 .dlk-radio input[type="radio"],
 .dlk-radio input[type="checkbox"] 
@@ -16,7 +24,6 @@
 .dlk-radio input[type="checkbox"]:checked + .fa{
     opacity:1
 }
-
 
 </style>
 
