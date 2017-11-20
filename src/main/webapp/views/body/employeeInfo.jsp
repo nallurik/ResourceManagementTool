@@ -15,7 +15,7 @@
 					</a></li>
 
 					<li><a href="#settings" data-toggle="tab" title="blah blah">
-						<span class="round-tabs four"> <i class="glyphicon glyphicon-education"></i> </span>
+						<span class="round-tabs four"> <i class="fa fa-graduation-cap"></i> </span>
 					</a></li>
 
 					<li><a href="#doner" data-toggle="tab" title="completed">
@@ -33,13 +33,13 @@
 					<jsp:include page="dependentsInfo.jsp" flush="true"/>
 				</div>
 				<div class="tab-pane fade" id="messages">
-					<jsp:include page="userprofile.jsp" flush="true"/>
+					<jsp:include page="immigrationinfo.jsp" flush="true"/>
 				</div>
 				<div class="tab-pane fade" id="settings">
-					<jsp:include page="userprofile.jsp" flush="true"/>
+					<jsp:include page="educationinfo.jsp" flush="true"/>
 				</div>
 				<div class="tab-pane fade" id="doner">
-					<jsp:include page="userprofile.jsp" flush="true"/>
+					<jsp:include page="travelhistory.jsp" flush="true"/>
 				</div>
 				<div class="clearfix"></div>
 			</div>
