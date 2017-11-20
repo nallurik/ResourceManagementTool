@@ -17,9 +17,13 @@
 					<li><a href="#settings" data-toggle="tab" title="blah blah">
 						<span class="round-tabs four"> <i class="fa fa-graduation-cap"></i> </span>
 					</a></li>
+					
+					<li><a href="#employment" data-toggle="tab" title="blah blah">
+						<span class="round-tabs five"> <i class="fa fa-industry"></i> </span>
+					</a></li>
 
 					<li><a href="#doner" data-toggle="tab" title="completed">
-						<span class="round-tabs five"> <i class="glyphicon glyphicon-ok"></i> </span>
+						<span class="round-tabs six"> <i class="glyphicon glyphicon-ok"></i> </span>
 					</a></li>
 
 				</ul>
@@ -37,6 +41,9 @@
 				</div>
 				<div class="tab-pane fade" id="settings">
 					<jsp:include page="educationinfo.jsp" flush="true"/>
+				</div>
+				<div class="tab-pane fade" id="employment">
+					<jsp:include page="employmentinfo.jsp" flush="true"/>
 				</div>
 				<div class="tab-pane fade" id="doner">
 					<jsp:include page="travelhistory.jsp" flush="true"/>
@@ -163,11 +170,22 @@ li.active span.round-tabs.four {
 }
 
 span.round-tabs.five {
+	color: rgb(238, 65, 244);
+	border: 2px solid rgb(238, 65, 244);
+}
+
+li.active span.round-tabs.five {
+	background: #fff !important;
+	border: 2px solid #ddd;
+	color: rgb(238, 65, 244);
+}
+
+span.round-tabs.six {
 	color: #999;
 	border: 2px solid #999;
 }
 
-li.active span.round-tabs.five {
+li.active span.round-tabs.six {
 	background: #fff !important;
 	border: 2px solid #ddd;
 	color: #999;
@@ -178,7 +196,7 @@ li.active span.round-tabs.five {
 }
 
 .nav-tabs>li {
-	width: 20%;
+	width: 15%;
 }
 /*li.active:before {
     content: " ";
