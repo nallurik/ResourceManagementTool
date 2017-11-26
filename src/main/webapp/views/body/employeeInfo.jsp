@@ -3,22 +3,22 @@
 		<div class="row">
 			<div class="board-inner">
 				<ul class="nav nav-tabs" id="myTab">
-					<li class="active"><a href="#home" data-toggle="tab" title="welcome"> 
+					<li class="active"><a href="#home" data-toggle="tab" title="Personal Information"> 
 						<span class="round-tabs one"><i class="glyphicon glyphicon-user"></i></span>
 					</a></li>
 
-					<li><a href="#profile" data-toggle="tab" title="profile">
+					<li><a href="#profile" data-toggle="tab" title="Dependents Information">
 						<span class="round-tabs two"> <i class="glyphicon glyphicon-user"></i><i class="glyphicon glyphicon-user"></i></span>
 					</a></li>
-					<li><a href="#messages" data-toggle="tab" title="bootsnipp goodies"> 
+					<li><a href="#messages" data-toggle="tab" title="Immigration Information"> 
 						<span class="round-tabs three"><i class="glyphicon glyphicon-flag"></i></span>
 					</a></li>
 
-					<li><a href="#settings" data-toggle="tab" title="blah blah">
+					<li><a href="#settings" data-toggle="tab" title="Education Information">
 						<span class="round-tabs four"> <i class="fa fa-graduation-cap"></i> </span>
 					</a></li>
 					
-					<li><a href="#employment" data-toggle="tab" title="blah blah">
+					<li><a href="#employment" data-toggle="tab" title="Employment Information">
 						<span class="round-tabs five"> <i class="fa fa-industry"></i> </span>
 					</a></li>
 
@@ -298,4 +298,10 @@ li.active span.round-tabs.six {
 		padding: 12px 20px;
 	}
 }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0;
+    border: none !important;
+}
+
 </style>
