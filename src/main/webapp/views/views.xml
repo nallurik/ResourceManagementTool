@@ -18,8 +18,11 @@
 			<add-attribute value="resources/css/rmt-navbar-menu.css"/>
 			<add-attribute value="resources/css/rmt-placeholder.css"/>
 			<add-attribute value="resources/css/font-awesome.css"/>
-			<add-attribute value="resources/css/datatables.min.css"/>
+			<add-attribute value="resources/css/dataTables.min.css"/>
 			<add-attribute value="resources/bootstrap/css/dataTables.bootstrap4.min.css"/>
+			<add-attribute value="resources/css/editor.dataTables.min.css"/>
+			<add-attribute value="resources/css/select.dataTables.min.css"/>
+			<add-attribute value="resources/css/buttons.dataTables.min.css"/>
 		</put-list-attribute>
 		<put-list-attribute name="scriptfiles" >
 			<add-attribute value="resources/js/jquery-3.2.1.min.js"/>
@@ -27,8 +30,16 @@
 			<add-attribute value="resources/bootstrap/js/bootstrap.js"/>
 			<add-attribute value="resources/bootstrap/js/bootstrap-toggle.min.js"/>
 			<add-attribute value="resources/bootstrap/js/bootstrap-multiselect.js"/>
-			<add-attribute value="resources/js/datatables.min.js"/>
+			<add-attribute value="resources/js/dataTables.min.js" />
 			<add-attribute value="resources/js/dataTables.bootstrap4.min.js"/>
+			<add-attribute value="resources/js/dataTables.editor.min.js" />
+			<add-attribute value="resources/js/dataTables.select.min.js" />
+			<add-attribute value="resources/js/dataTables.buttons.min.js" />
+			<add-attribute value="resources/js/jszip.min.js" />
+			<add-attribute value="resources/js/pdfmake.min.js" />
+			<add-attribute value="resources/js/vfs_fonts.js" />
+			<add-attribute value="resources/js/buttons.html5.min.js" />
+			<add-attribute value="resources/js/buttons.print.min.js" />
 		</put-list-attribute>
 	</definition>
 	
