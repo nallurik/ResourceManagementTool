@@ -81,8 +81,28 @@
 		</put-list-attribute>
 	</definition>
 	
-	<definition name="userprofile" extends="baseLayout">
-		<put-attribute name="body" value="/views/body/employeeInfo.jsp"/>
+	<definition name="createEmployeeProfile" extends="baseLayout">
+		<put-attribute name="body" value="/views/body/createOrEditEmployee.jsp"/>
+		<put-list-attribute name="cssfiles" inherit="true">
+			<add-attribute value="resources/bootstrap/css/bootstrap-datepicker.css"/>
+		</put-list-attribute>
+		<put-list-attribute name="scriptfiles" inherit="true">
+			<add-attribute value="resources/bootstrap/js/bootstrap-datepicker.js"/>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="editEmployeeProfile" extends="baseLayout">
+		<put-attribute name="body" value="/views/body/createOrEditEmployee.jsp"/>
+		<put-list-attribute name="cssfiles" inherit="true">
+			<add-attribute value="resources/bootstrap/css/bootstrap-datepicker.css"/>
+		</put-list-attribute>
+		<put-list-attribute name="scriptfiles" inherit="true">
+			<add-attribute value="resources/bootstrap/js/bootstrap-datepicker.js"/>
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="listEmployees" extends="baseLayout">
+		<put-attribute name="body" value="/views/body/employeesInfo.jsp"/>
 		<put-list-attribute name="cssfiles" inherit="true">
 			<add-attribute value="resources/bootstrap/css/bootstrap-datepicker.css"/>
 		</put-list-attribute>

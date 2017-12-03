@@ -4,8 +4,59 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('#example').DataTable();
-	});
+	    $('#example1').DataTable( {
+	    	dom: 'Bfrtip',
+	    	columnDefs : [ {
+	    		orderable : false,
+	    		className : 'dt-body-center',
+	    		targets : 0,
+	    		'render' : function(data, type, full, meta) {
+	    			return '<input type="checkbox">';
+	    		}
+	    	}],
+	    	order : [ [1, 'asc'] ],
+	    	select : {
+	    		style: 'os',
+	    		selector: 'td:first-child'
+	    	},
+	    	lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
+	    	buttons: [ 'pageLength', {
+		    		text: '<i class="dt-body-center fa fa-plus"></i>',
+	                action: function ( e, dt, node, config ) {
+	                    alert( 'Button activated' );
+	                }
+		    	} , {
+		    		extend : 'copyHtml5',
+		    		text: '<i class="fa fa-clipboard"></i>',
+		    		titleAttr : 'Copy',
+	                exportOptions : {
+	                	columns : ':visible'
+	                }
+		    	}, {
+		    		extend : 'excelHtml5',
+		    		text: '<i class="fa fa-file-excel-o"></i>',
+		    		titleAttr : 'Excel',
+	                exportOptions : {
+	                	columns : ':visible'
+	                }
+		    	}, {
+		    		extend : 'pdfHtml5',
+		    		text: '<i class="fa fa-file-pdf-o"></i>',
+		    		titleAttr : 'PDF',
+	                exportOptions : {
+	                	columns : ':visible'
+	                }
+		    	}, {
+		    		extend : 'csvHtml5',
+		    		text: '<i class="fa fa-file-o"></i>',
+		    		titleAttr : 'CSV',
+	                exportOptions : {
+	                	columns : ':visible'
+	                }
+		    	}
+	    	],
+	    } );
+	} );
 </script>
 
 <body>
@@ -15,7 +66,7 @@
 					<fieldset>
 						<!-- Form Name -->
 						<legend>Immigration Information</legend>
-						<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+						<table id="example1" class="display" cellspacing="0" width="100%">
 							<thead>
 								<tr>
 									<th>Name</th>

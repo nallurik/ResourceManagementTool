@@ -8,18 +8,28 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-	@RequestMapping(value="/", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView homePage() {
-        return new ModelAndView("welcome");
-    }
-	
-	@RequestMapping(value="/welcome", method = RequestMethod.GET)
+		return new ModelAndView("welcome");
+	}
+
+	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
 	public ModelAndView handleGetSignIn() {
-        return new ModelAndView("welcome");
-    }
-	
-	@RequestMapping(value="/userprofile", method = RequestMethod.GET)
-	public ModelAndView userProfile() {
-        return new ModelAndView("userprofile");
-    }
+		return new ModelAndView("welcome");
+	}
+
+	@RequestMapping(value = "/createEmployeeProfile", method = RequestMethod.GET)
+	public ModelAndView createEmployeeProfile() {
+		return new ModelAndView("createEmployeeProfile");
+	}
+
+	@RequestMapping(value = "/editEmployeeProfile", method = RequestMethod.GET)
+	public ModelAndView editEmployeeProfile() {
+		return new ModelAndView("editEmployeeProfile");
+	}
+
+	@RequestMapping(value = "/listEmployees", method = RequestMethod.GET)
+	public ModelAndView listEmployees() {
+		return new ModelAndView("listEmployees");
+	}
 }
