@@ -539,7 +539,7 @@
 
 						<div class="form-group" style="margin-bottom: 60px;">
 							<label class="col-md-4 control-label"></label>
-							<div class="col-md-4">
+							<div class="col-md-6">
 								<a href="#" class="btn btn-success"> <span  class="glyphicon glyphicon-thumbs-up"></span> Submit </a>
 								<a href="#" class="btn btn-danger"><span     class="glyphicon glyphicon-remove-sign"></span> Clear</a>
 							</div>
