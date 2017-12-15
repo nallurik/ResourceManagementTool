@@ -23,6 +23,7 @@
 			<add-attribute value="resources/css/editor.dataTables.min.css"/>
 			<add-attribute value="resources/css/select.dataTables.min.css"/>
 			<add-attribute value="resources/css/buttons.dataTables.min.css"/>
+			<add-attribute value="resources/css/jquery.contextMenu.css"/>
 		</put-list-attribute>
 		<put-list-attribute name="scriptfiles" >
 			<add-attribute value="resources/js/jquery-3.2.1.min.js"/>
@@ -40,6 +41,8 @@
 			<add-attribute value="resources/js/vfs_fonts.js" />
 			<add-attribute value="resources/js/buttons.html5.min.js" />
 			<add-attribute value="resources/js/buttons.print.min.js" />
+			<add-attribute value="resources/js/jquery.contextMenu.js" />
+			<add-attribute value="resources/js/jquery.ui.position.js" />
 		</put-list-attribute>
 	</definition>
 	
